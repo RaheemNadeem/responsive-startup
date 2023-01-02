@@ -12,15 +12,21 @@
     
     <header class="hero-section container">
         <nav class="navigation">
-            <img src="/Images/StartLogo.svg" alt="Start Logo" class="start-logo cursor-pointer">
-            <img src="/Images/Hamburger menu.svg" alt="Start Logo" class="nav-menu">
+            <img src="/Images/StartLogo.svg" alt="Start Logo" class="start-logo">
+            <img src="/Images/Hamburger menu.svg" alt="Start Logo" class="nav-menu" id="menuImage" onclick="navClick()">
             <div class="nav-links">
                 <a href="/index.html" class="nav-link">Home</a>
                 <a href="/portfolio.html" class="nav-link">Portfolio</a>
-                <a href="/services.html" class="nav-link">Services</a>
+                <a href="" class="nav-link">Services</a>
                 <a href="" class="nav-link">Contact</a>
             </div>
         </nav>
+        <div class="mobile-nav-links display-none" id="navMobileLinks">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/portfolio.html" class="nav-link">Portfolio</a>
+            <a href="" class="nav-link">Services</a>
+            <a href="" class="nav-link">Contact</a>
+        </div>
     </header>
 
     <section class="container text-align-center">
@@ -57,6 +63,15 @@
         </div>
         <p class="footer-text">© Start, 2022. All rights reserved.</p>
     </footer>
+
+    <script>
+        function navClick(){
+            var navMenu = document.getElementById("menuImage");
+            var mobileNavLinks = document.getElementById("navMobileLinks");
+            navMenu.classList.toggle("nav-menu-active");
+            mobileNavLinks.classList.toggle("display-none");
+        }
+    </script>
     
 </body>
 </html>
