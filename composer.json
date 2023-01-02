@@ -1,0 +1,11 @@
+{
+  "name": "start-up-responsive",
+  "description": "A PHP project on Heroku",
+  "type": "project",
+  "require": {
+    "php": "^7.4"
+  },
+  "scripts": {
+    "start": "php -S localhost:$PORT"
+  }
+}

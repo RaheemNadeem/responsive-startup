@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'crimson-text';
+    src: url('Fonts/CrimsonText/CrimsonText-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('Fonts/WorkSans/WorkSans-Regular.ttf')
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.start-logo{
+    width: 8.06rem;
+}
+
+.nav-menu{
+   width: 2.5rem;
+}
+
+.nav-links{
+    display: none;
+}
+
+.container{
+    padding:0 1.25rem;
+}
+.hero-section{
+    background-color: #74C69D;
+    padding-bottom:1rem;
+    padding-top: 1rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text-content{
+    margin-bottom: 2.81rem;
+    text-align: center;
+    margin-top: 2.125rem;
+}
+
+.logo-text-first-heading{
+    font-size: 1rem;
+    font-family: work-sans;
+    letter-spacing: 0.3rem;
+    color:#74C69D;
+}
+
+.logo-text-second-heading{
+    margin:1rem 0;
+    font-size: 1.5rem;
+    font-family: crimson-text;
+}
+
+.logo-text-para{
+    font-size: 1.25rem;
+    font-family: work-sans;
+}
+
+.projects{
+    display: flex;
+    gap:3.43rem;
+    flex-direction: column;
+    margin-bottom: 2.75rem;
+}
+
+
+.text-align-center{
+    text-align: center;
+}
+
+footer{
+    background-color: #74C69D;
+    padding:1.93rem 1.25rem;
+}
+
+.footer-icons{
+    display: flex;
+    gap:1.25rem;
+    padding: 0 2.65rem;
+    justify-content: center;
+}
+
+.footer-text{
+    font-size: 1.25rem;
+    line-height: 0.62rem;
+    font-family: work-sans;
+    color:#FFFFFF;
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.project-image{
+    width: 100%;
+}
+
+.learn-more-button{
+    width: 10.625rem;
+    height: 3rem;
+    background-color: #000000;
+    color:#FFFFFF;
+    padding:1rem 1.87rem;
+    font-size: 1.2rem;
+    font-family: work-sans;
+    border-radius: 5px;
+    line-height: 10px;
+    font-weight: unset;
+}
+
+.talent-button{
+    margin-bottom: 2.5rem;
+}
+
+.service-card{
+    padding: 2.87rem 1.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basic{
+    font-size: 1rem;
+    font-family: work-sans;
+    color:rgba(0, 0, 0, 1);
+}
+
+.price-number{
+    font-size: 2.5rem;
+    font-family: work-sans;
+    color:rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.price-month{
+    font-size: 1rem;
+    font-family: work-sans;
+    color:rgba(33, 37, 41, 0.5);
+}
+
+.price{
+    margin-bottom: 1rem;
+}
+
+.card-para{
+    font-size: 1rem;
+    font-family: work-sans;
+    color:rgba(33, 37, 41, 0.5);
+    margin-bottom: 3.25rem;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card{
+    padding:2.62rem 1.87rem;
+    border-radius: 5px;
+    box-shadow: 3px 4px 12px 1px rgba(0,0,0,0.25);
+}
+
+.service-cards{
+    display: flex;
+    flex-direction: column;
+    gap:3.125rem;
+}
+
+.benefits>p{
+    font-size: 1rem;
+    font-family: work-sans;
+    margin-left: 0.82rem;
+}
+
+.benefits:nth-child(even){
+    margin: 0.82rem 0;
+}
+
+.benefits:nth-child(7){
+    margin-bottom: 3rem;
+}
+
+.cards-section{
+    padding-bottom:4.81rem;
+}
+
+@media only screen and (min-width: 600px) {
+    html{
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .projects{
+        all:unset;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2.43rem;
+        margin-bottom: 2.75rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .footer-text{
+        margin-top: unset;
+    }
+
+    .footer-icons{
+        padding:unset;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-links{
+        display: unset;
+        display: flex;
+        gap:1.85rem;
+    }
+
+    .nav-link{
+        text-decoration: none;
+        color:#FFFFFF;
+        font-size: 1.25rem;
+        font-family: work-sans;
+        
+    }
+
+    .navigation{
+        align-items: center;
+    }
+
+    .service-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    html{
+        font-size: 18px;
+    }
+
+    .service-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    html{
+        font-size: 20px;
+    }
+
+    .service-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+}
